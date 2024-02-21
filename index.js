@@ -31,7 +31,7 @@ function removeTask(event) {
 function appendToDisplay() {
   const tasks = document.querySelectorAll("#tskcnt .task");
   const taskInputText = document.getElementById("task-input-text");
-  if (tasks.length < 5) {
+  if (tasks.length < 5 && taskInputText.value !== "") {
     const newTask = document.createElement("div");
     newTask.className = "task";
 
