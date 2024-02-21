@@ -56,13 +56,25 @@ body {
           border: hsl(236, 33%, 92%) 1px solid;
           border-radius: 50%;
           cursor: pointer;
-          padding: 0.25rem;
+          padding: 1rem;
         }
-        .task-checkbox:checked {
+
+        .task-checkbox:hover {
           background: linear-gradient(
             to bottom right,
             hsl(192, 100%, 67%),
             hsl(280, 87%, 65%)
+          );
+          content: url("images/icon-check.svg");
+          object-fit: contain;
+          height: 2rem;
+          width: 2rem;
+        }
+        .task-checkbox:active {
+          background: linear-gradient(
+            to bottom right,
+            hsl(192, 100%, 77%),
+            hsl(280, 87%, 75%)
           );
           content: url("images/icon-check.svg");
           object-fit: contain;

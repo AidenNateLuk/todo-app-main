@@ -29,6 +29,11 @@ function removeTask(event) {
 }
 
 function appendToDisplay() {
+  setTimeout(function () {
+    const taskInputText = document.getElementById("task-input-text");
+    taskInputText.value = "";
+  }, 1000);
+
   const tasks = document.querySelectorAll("#tskcnt .task");
   const taskInputText = document.getElementById("task-input-text");
   if (tasks.length < 5 && taskInputText.value !== "") {
