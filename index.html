@@ -1,36 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Todo app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="title"><h2>Todo</h2></div>
+        <div class="theme-toggle" onclick="toggleTheme()">
+          <img src="images/icon-moon.svg" id="toggle-btn" />
+        </div>
+      </header>
+      <main>
+        <div class="task-input-container">
+          <input
+            class="task-checkbox"
+            type="checkbox"
+            onclick="appendToDisplay()"
+          />
+          <input
+            type="text"
+            id="task-input-text"
+            placeholder="Create a new todo..."
+          />
+        </div>
+        <div id="tskcnt" class="task-container">
+          <div class="task">
+            <input type="checkbox" class="task-checkbox" />
+            <input
+              class="display"
+              type="text"
+              value="This is an example "
+              readonly
+            />
+            <img src="images/icon-cross.svg" alt="" />
+          </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Todo
-
-  <!-- Add dynamic number --> items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <div class="item-info">
+            <div class="item-index">items left</div>
+            <div class="clear-completed">
+              <a href="">Clear Completed</a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <a href="">All</a>
+        <a href="">Active</a>
+        <a href="">Completed</a>
+      </footer>
+    </div>
+    <p>Drag and drop to reorder list</p>
+    <script src="index.js"></script>
+  </body>
 </html>
