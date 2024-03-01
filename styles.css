@@ -201,6 +201,9 @@ body.dark {
     main {
       .task-input-container {
         background-color: hsl(235, 24%, 19%);
+        #task-input-text {
+          color: hsl(234, 11%, 52%);
+        }
         #task-input-text::placeholder {
           color: hsl(234, 11%, 52%);
         }
@@ -212,6 +215,7 @@ body.dark {
         background-color: hsl(235, 24%, 19%);
         .task {
           border-color: hsl(234, 11%, 52%);
+          color: hsl(234, 11%, 52%);
           .task-checkbox {
             border-color: hsl(234, 11%, 52%);
           }
