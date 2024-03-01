@@ -56,9 +56,9 @@ function appendToDisplay() {
 
     newImage.addEventListener("click", removeTask);
 
-    const firstTask = document.querySelector("#tskcnt .task");
+    const taskInfo = document.getElementById("items-info");
 
-    document.getElementById("tskcnt").insertBefore(newTask, firstTask);
+    document.getElementById("tskcnt").insertBefore(newTask, taskInfo);
   } else {
     console.log("Maximum number of task elements reached.");
   }

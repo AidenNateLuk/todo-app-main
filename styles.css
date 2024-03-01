@@ -66,7 +66,6 @@ body {
             hsl(280, 87%, 65%)
           );
           content: url("images/icon-check.svg");
-          object-fit: contain;
           height: 2rem;
           width: 2rem;
         }
@@ -215,11 +214,14 @@ body.dark {
         background-color: hsl(235, 24%, 19%);
         .task {
           border-color: hsl(234, 11%, 52%);
-          color: hsl(234, 11%, 52%);
+
           .task-checkbox {
             border-color: hsl(234, 11%, 52%);
           }
           img {
+            color: hsl(234, 11%, 52%);
+          }
+          input {
             color: hsl(234, 11%, 52%);
           }
         }
