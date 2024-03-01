@@ -153,12 +153,12 @@ body {
         align-items: center;
         padding: 1.5rem 1rem;
         color: hsl(233, 11%, 84%);
-        a {
+        p {
           color: hsl(233, 11%, 84%);
           text-decoration: none;
           cursor: pointer;
         }
-        a:hover {
+        p:hover {
           color: hsl(220, 98%, 61%);
         }
       }
@@ -173,12 +173,12 @@ body {
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
       border-radius: 5px;
       border: none;
-      a {
+      p {
         color: hsl(233, 11%, 84%);
         text-decoration: none;
         cursor: pointer;
       }
-      a:hover {
+      p:hover {
         color: hsl(220, 98%, 61%);
       }
     }
@@ -225,10 +225,10 @@ body.dark {
         }
         .item-info {
           color: hsl(234, 11%, 52%);
-          a {
+          p {
             color: hsl(234, 11%, 52%);
           }
-          a:hover {
+          p:hover {
             color: white;
           }
         }
@@ -236,10 +236,10 @@ body.dark {
     }
     footer {
       background-color: hsl(235, 24%, 19%);
-      a {
+      p {
         color: hsl(234, 11%, 52%);
       }
-      a:hover {
+      p:hover {
         color: white;
       }
     }
